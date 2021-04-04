@@ -24,7 +24,7 @@ export default function App () {
 
   return (
     <View style={styles.container}>
-      <Text Style={styles.header}>Essa é a minha FlatList</Text>
+      <Text style={styles.header}>Essa é a minha FlatList</Text>
       <FlatList 
         keyExtractor = {item => item.id}
         data={users}
