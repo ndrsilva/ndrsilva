@@ -1,0 +1,9 @@
+p,h1,h2,h3,h4, h5, h6{
+    color: #800;
+    font-size:15px;
+    font-weight: lighter; /*Peso da fonte "negrito"*/
+}
+
+.titulo{
+    color:#00f;
+}
