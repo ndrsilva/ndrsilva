@@ -12,7 +12,7 @@ const Page = styled.SafeAreaView`
 const Input = styled.TextInput`
   width:200px;
   height:40px;
-  border:1px solid #000;
+  border:1px solid #000; 
   color:#000;
 `;
 
