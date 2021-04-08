@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react'; 
-import {View, Text, Button, StyleSheet} from 'react-native'
+import React, {useEffect, useState, StyleSheet} from 'react'; 
+import {View, Text, Button, } from 'react-native'
 import styled from 'styled-components/native';
 
 const Page = styled.SafeAreaView`
@@ -82,7 +82,7 @@ export default () => {
     <Page>
       <Text style={styles.header}>Calculadora de Gorjeta</Text>
       <Input 
-        placeholder="Quando deu a conta?"
+        placeholder="Quando deu a conta?" 
         placeholderTextColor="#000"
         //default-numeric-email-address
         keyboardType="numeric"
@@ -97,7 +97,7 @@ export default () => {
         <PctItem title="20%" onPress={()=>setPtc(20)}/>
       </PctArea>
 
-      <CalcButton title={`Calcular ${ptc}%`}  onPress={calc}/>
+      <CalcButton title={`Calcular ${ptc}%`}   onPress={calc}/>
       { tip > 0 &&
         <ResultArea>
           <ResultItemTitle>Valor da Conta</ResultItemTitle>

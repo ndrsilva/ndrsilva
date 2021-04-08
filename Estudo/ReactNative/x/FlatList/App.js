@@ -4,7 +4,7 @@ import {StyleSheet, Text, View, FlatList} from 'react-native'
 export default function App () {
   const users = [
     {id:'1', name: 'ndr', age: '20'},
-    {id:'2', name: 'a93', age: '22'},
+    {id:'2', name: 'a93', age: '22'},  
     {id:'3', name: 'notte', age: '18'},
     {id:'4', name: 'ndr', age: '20'},
     {id:'5', name: 'a93', age: '22'},
@@ -17,7 +17,7 @@ export default function App () {
   function User ({username}) {
     return (
       <View>
-        <Text>{username}    </Text>
+        <Text>{username}    </Text> 
       </View>
     )
   }
