@@ -1,5 +1,4 @@
-import React, { useState } from 'react'; 
-import {Text, StyleSheet, View, FlatList} from 'react-native'
+import React from 'react'; 
 import Tela from './src/screens/Tela';
 
 
