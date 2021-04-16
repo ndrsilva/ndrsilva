@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, FlatList } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios'
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, FlatList, ScrollView } from 'react-native';
+
+import ListaMusicas from '../components/ListaMusicas/ListaMusicas';
 
 const Tela = ()=> {
     const [text, setText] = useState('');
@@ -7,27 +10,25 @@ const Tela = ()=> {
     const pegarTexto = (text) => {
         setText(text);
     }
-
-   
-        const users = [
-          {id:'1', name: 'Música 1', },
-          {id:'2', name: 'Música 2', },  
-          {id:'3', name: 'Música 3', },
-          {id:'4', name: 'Música 4',},
-          {id:'5', name: 'Música 5', },
-          {id:'6', name: 'Música 6', },
-          {id:'7', name: 'Música 7', },
-          {id:'8', name: 'Música 8', },
-        
-        ]
+    const [cars, setCars] = useState(['']);
       
-        function User ({username}) {
-          return (
-              <Text style={styles.listaMusica}>{username}</Text>
-          )
-        }
-
+    function User ({username}) {
+        return (
+            <Text style={styles.listaMusica}>{username}</Text>
+        )
+    }
+    const instance = axios.create({
+        baseURL:'https://pdm-cars-api.herokuapp.com/',
+    })
+    useEffect( ()=> {
+        instance.get("cars").then((response)=> {
+            console.log(response.data); 
+            setCars(response.data);
+        })
+    }, []);
+    
     return(
+        <ScrollView>
         <View style={styles.container}>
             <View style={styles.titulo}>
                 <Text>Informe o nome de um cantor</Text>
@@ -50,17 +51,18 @@ const Tela = ()=> {
                 <Text>Lista de Músicas</Text>
             </View>
             <View style={styles.titulo3}>
-                <Text >Quantidade: 50</Text>
+                <Text >Quantidade: {cars.length}</Text>
             </View>
             <View>
             <FlatList 
                 keyExtractor = {item => item.id}
-                data={users}
-                renderItem={ ({item}) => < User username={item.name} />}
-      />
+                data={cars}
+                renderItem={ (props) => < ListaMusicas username={props.item.model} />}
+                
+            />
             </View>
         </View>
-        
+        </ScrollView>
     )
 }
 
@@ -70,7 +72,7 @@ const styles = StyleSheet.create({
     container:{
         backgroundColor: '#FFF',
         flex:1,
-        alignItems:'center',
+        //alignItems:'center',
         //justifyContent: 'center',
         paddingHorizontal:40,
 
@@ -82,7 +84,6 @@ const styles = StyleSheet.create({
     },
     titulo2:{
         marginTop:57,
-        marginLeft:1,
     },
     titulo3:{
         marginTop:23,
@@ -96,9 +97,9 @@ const styles = StyleSheet.create({
     },
     touchableOpacity:{
         marginTop:77,
+        marginHorizontal:29,
         backgroundColor: '#9b39cb',
         borderRadius:5,
-        width:200,
         height:40,
         shadowColor: "#000",
         shadowOffset: {
@@ -110,6 +111,7 @@ const styles = StyleSheet.create({
 
         elevation: 13,
     },
+    
     textPesquisar:{
         textAlign: 'center',
         color: 'white',
