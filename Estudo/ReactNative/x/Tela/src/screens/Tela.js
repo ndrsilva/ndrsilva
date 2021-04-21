@@ -1,69 +1,87 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios'
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, FlatList, ScrollView } from 'react-native';
+import React, {useEffect, useState} from 'react';
+import axios from 'axios';
+import {View, Text, StyleSheet, TextInput, TouchableOpacity, FlatList} from 'react-native';
 
 import ListaMusicas from '../components/ListaMusicas/ListaMusicas';
 
 const Tela = ()=> {
-    const [text, setText] = useState('');
+    const [nomeMusica, setNomeMusica] = useState('');
+    const [musica, setMusica] = useState('');
+    const [dados, setDados] = useState(['']);
 
-    const pegarTexto = (text) => {
-        setText(text);
+    const pegarTexto = (nomeMusica) => {
+        setNomeMusica(nomeMusica);
     }
-    const [cars, setCars] = useState(['']);
+    const pesMusica = () => {
+        setMusica(nomeMusica);
+    }
       
-    function User ({username}) {
-        return (
-            <Text style={styles.listaMusica}>{username}</Text>
-        )
-    }
+   
     const instance = axios.create({
-        baseURL:'https://pdm-cars-api.herokuapp.com/',
+        baseURL:'https://itunes.apple.com/search?term=', 
     })
+
     useEffect( ()=> {
-        instance.get("cars").then((response)=> {
-            console.log(response.data); 
-            setCars(response.data);
+        instance.get(musica).then((response)=> {
+            console.log(response.data.results); 
+            setDados(response.data.results);
         })
-    }, []);
-    
+    }, [musica]);
+    //ou
+    /*
+    const getMusica = async ()  => {
+        try {
+            const response = await axios.get('https://itunes.apple.com/search?term='+musica);
+            console.log('Certo', response);
+            setDados(response.data.results)
+
+        } catch (error) {
+            console.log('Erro', error);
+        }
+    } 
+    useEffect( ()=> {
+        getMusica();
+    }, [musica]);
+    */
     return(
-        <ScrollView>
+        
         <View style={styles.container}>
-            <View style={styles.titulo}>
-                <Text>Informe o nome de um cantor</Text>
-            </View>
-            <View>
-                <TextInput style={styles.input}
-                    onChangeText={pegarTexto}
-                    value={text}
-                    placeholder="Pesquisar cantor"
-                    placeholderTextColor='#d8ecfb'
+            
+                <View style={styles.titulo}>
+                    <Text>Informe o nome de um cantor</Text>
+                </View>
+                <View>
+                    <TextInput style={styles.input}
+                        onChangeText={pegarTexto}
+                        value={nomeMusica}
+                        placeholder="Pesquisar cantor"
+                        placeholderTextColor='#d8ecfb'
+                    
+                    />
+                </View>
+                <View> 
+                    <TouchableOpacity style={styles.touchableOpacity} onPress={pesMusica}>
+                        <Text style={styles.textPesquisar}>Pesquisar</Text>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.titulo2}>
+                    <Text>Lista de Músicas</Text>
+                </View>
+                <View style={styles.titulo3}>
+                    <Text >Quantidade: {dados.length}</Text>
+                </View>
                 
+                <FlatList 
+                    //keyExtractor = {item => item} 
+                    data={dados}
+                    renderItem={ ({item}) => < ListaMusicas username={item.artistName} />}
+                    
                 />
-            </View>
-            <View>
-                <TouchableOpacity style={styles.touchableOpacity}>
-                    <Text style={styles.textPesquisar}>Pesquisar</Text>
-                </TouchableOpacity>
-            </View>
-            <View style={styles.titulo2}>
-                <Text>Lista de Músicas</Text>
-            </View>
-            <View style={styles.titulo3}>
-                <Text >Quantidade: {cars.length}</Text>
-            </View>
-            <View>
-            <FlatList 
-                keyExtractor = {item => item.id}
-                data={cars}
-                renderItem={ (props) => < ListaMusicas username={props.item.model} />}
-                
-            />
-            </View>
+                  
         </View>
-        </ScrollView>
-    )
+        
+        
+    ) 
 }
 
 export default Tela;

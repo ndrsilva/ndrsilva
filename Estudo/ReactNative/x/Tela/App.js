@@ -5,9 +5,9 @@ import Tela from './src/screens/Tela';
 const App = ()=> {
   return(
     <>
-      <Tela />
+      <Tela /> 
     </>
   )
 }
 
-export default App;
+export default App; 

@@ -3,7 +3,6 @@ import {Text, View, TouchableOpacity, FlatList, StyleSheet } from 'react-native'
 
 const ListaMusicas = (props) => {
     const {username} = props;
-    console.log(props);
     return(
         <Text style={styles.listaMusica}>{username}</Text>
     );
@@ -31,7 +30,7 @@ listaMusica:{
     shadowOpacity: 0.20,
     shadowRadius: 1.41,
 
-    elevation: 2,
+    elevation: 2, 
     
 }
 })
