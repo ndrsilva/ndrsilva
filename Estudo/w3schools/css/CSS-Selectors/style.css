@@ -1,0 +1,15 @@
+*{
+    text-align:center;
+    color:blue;
+}
+.center{
+    text-align:center;
+}
+p.large{
+    font-size:300%;
+    color:red;
+}
+
+p, h2, h3{
+    color:black;
+}
