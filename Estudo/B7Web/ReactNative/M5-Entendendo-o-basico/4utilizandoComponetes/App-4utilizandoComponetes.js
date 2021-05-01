@@ -9,7 +9,7 @@ const Page = styled.SafeAreaView`
 `;
 
 const Texto = styled.Text`
-    color:${props=>props.cor};
+    color:${(props)=>props.cor};
     font-size: 30px;
     background-color: green;
 `;
