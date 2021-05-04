@@ -14,4 +14,4 @@ const Sobre = ({ route }) => {
 
   );
 }
-export default Sobre;
+export default Sobre; 

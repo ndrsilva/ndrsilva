@@ -17,4 +17,4 @@ const Tela = ({ navigation }) => {
 
   );
 }
-export default Tela;
+export default Tela; 
