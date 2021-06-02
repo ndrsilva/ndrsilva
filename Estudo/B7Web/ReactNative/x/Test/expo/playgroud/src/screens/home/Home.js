@@ -4,12 +4,12 @@ import Styles from './Styles';
 
 const Home = ({navigation}) => {
   return(
-    <ScrollView style = {Styles.container}>
+    <View style = {Styles.container}>
       <View style = {Styles.viewContainer}>
         <View style={Styles.viewLogo}>
           <Image 
             style={Styles.logo}
-            source={require('../../images/Grupo3x.png')}
+            source={require('../../images/Grupo@3x.png')}
           />
         </View>
         <View>
@@ -51,7 +51,7 @@ const Home = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </View>
-    </ScrollView>
+    </View>
   );
 };
 export default Home;
