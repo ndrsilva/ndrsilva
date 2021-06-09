@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView, FlatList, View, Image, Text } from 'react-native';
+import { SafeAreaView, FlatList, View, Image, Text, StyleSheet } from 'react-native';
 import axios from 'axios';
 
 export default function App() {
@@ -59,6 +59,7 @@ export default function App() {
     return (
         <SafeAreaView>
             <FlatList 
+                numColumns={2}
                 data={pokemons}
                 keyExtractor={(pokemon) => pokemon.name}
                 contentContainerStyle={{flexGrow: 1 }}
@@ -77,11 +78,31 @@ function PokemonShow(item) {
     const imageUrl = 'https://pokeres.bastionbot.org/images/pokemon/'+pokemonNumber+'.png'
 
     return (
-        <View style={{flexDirection: 'row'}}>
-            <Image style={{width:50, height: 50}} 
+        <View  style = {styles.item}>
+            <View>
+            <Image 
+                style = {styles.image}
                 source={{ uri: imageUrl }} 
             />
+            </View>
+            <View>
             <Text>{name}</Text>
+            </View>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    image:{
+        width:100,
+        height:100
+    },
+    item:{
+        flex:1,
+        padding:4,
+        justifyContent:'center',
+        alignItems:'center',
+        marginHorizontal:5,
+        
+    }
+})
