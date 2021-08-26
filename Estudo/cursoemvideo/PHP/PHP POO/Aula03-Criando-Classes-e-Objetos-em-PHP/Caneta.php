@@ -11,7 +11,7 @@ class Caneta {
         if ($this->tampada == true) {
             echo "<p>ERRO! Não posso rabiscar!</p>";
         } else {
-            echo "<p>Estou rabiscando...</p>";    
+            echo "<p>Estou rabiscando...</p>";     
         }
 
     }
