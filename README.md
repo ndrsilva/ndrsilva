@@ -1,16 +1,24 @@
-## Hi there 👋
+# 👋 Olá! Eu sou André Silva!
 
-<!--
-**ndrsilva/ndrsilva** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Sobre mim
+- 🎓 Formação: Sistema de Informação
+- 💼 Trabalho atual: Desenvolvdor Python/ RPA na Globalsys
+- 🚀 Projetos: [...]
 
-Here are some ideas to get you started:
+### Minhas Contribuições
+- 🌟 Principais linguagens:
+  - Python
+  
+- 📚 Estou aprendendo atualmente: Rust
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Onde me encontrar:
+- 🌐 Seu site pessoal ou portfólio: ...
+- 💼 LinkedIn: https://www.linkedin.com/in/andre-luis-silva-souza/
+- 📫 Contato: andreluis.9097@gmail.com
+
+### Minhas Estatísticas do GitHub:
+![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=seu-usuario&show_icons=true&theme=radical)
+
+### Tecnologias e Ferramentas:
+![Ferramentas](https://img.shields.io/badge/-Ferramenta1-brightgreen?style=for-the-badge&logo=Ferramenta1)
+![Ferramenta2](https://img.shields.io/badge/-Ferramenta2-blue?style=for-the-badge&logo=Ferramenta2)
