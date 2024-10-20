@@ -13,7 +13,7 @@
   - Machine Learning
 
 ### Where to Find Me:
-- 💼 [LinkedIn]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/andre-luis-silva-souza/)
+- 💼 [LinkedIn](https://linkedin.com/in/your-profile](https://www.linkedin.com/in/andre-luis-silva-souza/)
 - 📫 Contact: [andreluis.9097@gmail.com]
 
 ### GitHub Stats:
