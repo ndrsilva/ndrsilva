@@ -35,5 +35,6 @@
 ### Tools & Technologies:
 ![Python](https://img.shields.io/badge/-Python-blue?style=for-the-badge&logo=Python)
 ![Django](https://img.shields.io/badge/-Django-green?style=for-the-badge&logo=Django)
+![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-red?style=for-the-badge&logo=django)
 ![Postgres](https://img.shields.io/badge/-Postgres-blue?style=for-the-badge&logo=PostgreSQL)
 ![RPA](https://img.shields.io/badge/-RPA-orange?style=for-the-badge&logo=python)
