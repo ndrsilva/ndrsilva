@@ -1,24 +1,39 @@
-# 👋 Olá! Eu sou André Silva!
+# 👋 Hello! I'm [André Silva]!
 
-### Sobre mim
-- 🎓 Formação: Sistema de Informação
-- 💼 Trabalho atual: Desenvolvdor Python/ RPA na Globalsys
-- 🚀 Projetos: [...]
+### About Me
+- 🎓 Education: Information Systems
+- 💼 Focus Areas: Backend Development, RPA (Robotic Process Automation), Machine Learning, Artificial Intelligence
 
-### Minhas Contribuições
-- 🌟 Principais linguagens:
+### My Contributions
+- 🌟 Main Programming Languages:
   - Python
   
-- 📚 Estou aprendendo atualmente: Rust
+- 📚 Currently Learning:
+  - Rust
+  - Machine Learning
 
-### Onde me encontrar:
-- 🌐 Seu site pessoal ou portfólio: ...
-- 💼 LinkedIn: https://www.linkedin.com/in/andre-luis-silva-souza/
-- 📫 Contato: andreluis.9097@gmail.com
+### Technologies and Tools I Use:
+- Python
+- Django
+- Django REST Framework
+- Postgres
+- RPA with Python
 
-### Minhas Estatísticas do GitHub:
-![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=seu-usuario&show_icons=true&theme=radical)
+### Featured Projects
+- 🚀 Backend Development projects
+- 🤖 Robotic Process Automation (RPA) solutions
+- 🧠 Machine Learning and Artificial Intelligence experiments
 
-### Tecnologias e Ferramentas:
-![Ferramentas](https://img.shields.io/badge/-Ferramenta1-brightgreen?style=for-the-badge&logo=Ferramenta1)
-![Ferramenta2](https://img.shields.io/badge/-Ferramenta2-blue?style=for-the-badge&logo=Ferramenta2)
+### Where to Find Me:
+- 🌐 [Your personal website or portfolio](...)
+- 💼 [LinkedIn]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/andre-luis-silva-souza/))
+- 📫 Contact: [andreluis.9097@gmail.com]
+
+### GitHub Stats:
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical)
+
+### Tools & Technologies:
+![Python](https://img.shields.io/badge/-Python-blue?style=for-the-badge&logo=Python)
+![Django](https://img.shields.io/badge/-Django-green?style=for-the-badge&logo=Django)
+![Postgres](https://img.shields.io/badge/-Postgres-blue?style=for-the-badge&logo=PostgreSQL)
+![RPA](https://img.shields.io/badge/-RPA-orange?style=for-the-badge&logo=python)
