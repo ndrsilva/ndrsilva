@@ -1,4 +1,4 @@
-# 👋 Hello! I'm [André Silva]!
+# Hello! I'm André Silva 👋
 
 ### About Me
 - 🎓 Education: Information Systems
@@ -12,25 +12,12 @@
   - Rust
   - Machine Learning
 
-### Technologies and Tools I Use:
-- Python
-- Django
-- Django REST Framework
-- Postgres
-- RPA with Python
-
-### Featured Projects
-- 🚀 Backend Development projects
-- 🤖 Robotic Process Automation (RPA) solutions
-- 🧠 Machine Learning and Artificial Intelligence experiments
-
 ### Where to Find Me:
-- 🌐 [Your personal website or portfolio](...)
-- 💼 [LinkedIn]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/andre-luis-silva-souza/))
+- 💼 [LinkedIn]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/andre-luis-silva-souza/)
 - 📫 Contact: [andreluis.9097@gmail.com]
 
 ### GitHub Stats:
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ndrsilva&show_icons=true&theme=radical)
 
 ### Tools & Technologies:
 ![Python](https://img.shields.io/badge/-Python-blue?style=for-the-badge&logo=Python)
